@@ -1,4 +1,4 @@
-FROM golang:1.8.3-alpine3.6 as builder
+FROM golang:1.9.4-alpine3.6 as builder
 
 RUN apk --no-cache add curl \
     && echo "Pulling watchdog binary from Github." \

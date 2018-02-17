@@ -1,4 +1,4 @@
-FROM alexellis2/go-armhf:1.8.4 as builder
+FROM alexellis2/go-armhf:1.9.4 as builder
 
 RUN apk --no-cache add curl \
     && echo "Pulling watchdog binary from Github." \
