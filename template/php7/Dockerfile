@@ -34,7 +34,7 @@ RUN [[ -f php-extension.sh ]] && sh ./php-extension.sh && \
 # Entry
 USER app
 
-# Install Composer Dependecies
+# Install Composer dependencies
 RUN [[ -f composer.lock || -f composer.json ]] && composer install --no-dev
 
 USER root
